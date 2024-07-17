@@ -176,3 +176,11 @@ Generate the code for the `.proto` files after you've changed anything in a `.pr
 ```shell
 make proto
 ```
+
+## GC won't response
+If the GC won't respond to any event try to delete the state file.
+But be aware that this will delete the current gamestate for the GC.
+```shell
+cd .config/ssl-game-controller/config
+rm state-store.json.stream
+```
